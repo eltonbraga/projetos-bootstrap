@@ -10,6 +10,29 @@
     object-position: 0 60%;
 }
 
-.carousel-titulo {
+.pacifico-font {
     font-family: 'Pacifico', cursive;
+}
+
+.sub-title-text {
+    font-size: 25px;
+}
+
+.cor-darkred {
+    color: darkred;
+}
+
+.card-button {
+    background-color: darkred;
+    color: white;
+}
+
+.card-details {
+    border-color: darkred;
+    max-width: 18rem;
+}
+
+.card-img {
+    height: 250px;
+    object-fit: cover;
 }
