@@ -65,3 +65,72 @@ display: flex;
 
 Obs.: As duas propriedades flex-direction e flex-wrap são usadas tão frequentemente juntas.
 Quando ocorre abreviamos flex-flow. Essa propriedade aceita o valor das duas propriedades separados por um espaço.
+
+
+
+-----
+
+body {
+  font-size: 14px;
+}
+
+div {
+  font-size: 2em;
+}
+
+<body>
+  <div>texto</div>
+</body>
+
+Neste caso a font dentro da div terá o valor de 2 x 14px.
+
+<body>
+    <div> //font-size: 2em x 14px = 28px
+        <div> //font-size: 2em x 28px = 56px
+            <div> //font-size: 2em x 56px = 112px
+                texto
+            </div>
+        </div>
+    </div>
+</body>
+
+Note que nesse caso cada div filha tem o dobro da div pai, tornando o texto bem grande no final.
+
+Se não quisermos o comportamento de dobrar podemos usar ao invés de "em" (element pai como referência) podemos usar
+o "rem" (root como referência), dessa forma o texto terá o dobro (28px). Se não colocarmos o font-size por padrão 
+css utiliza 16 px como (1em ou 1rem).
+
+Já o Bootstrap, as classes de margin e padding utilizam valores de 0 a 5 baseados em rem, 
+de 0.25rem até 3rem. ou seja, como não estipulamos nada em nosso projeto, a medida-base de 
+cada rem é a padrão de 16px.
+
+Texto (texto no bootstrap 4)
+https://getbootstrap.com/docs/4.3/utilities/text/
+
+Cores (texto no bootstrap 4)
+https://getbootstrap.com/docs/4.3/utilities/colors/
+
+Espaçamento (texto no bootstrap 4)
+https://getbootstrap.com/docs/4.3/utilities/spacing/
+
+Cards:
+https://getbootstrap.com/docs/4.3/components/card/
+
+Colors:
+https://getbootstrap.com/docs/4.3/utilities/colors/#background-color
+
+Grids:
+https://getbootstrap.com/docs/4.3/layout/grid/
+
+HTML semantico
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+
+Scripts para facilitar reload da pagina
+  <!-- Begin: helping debug (página é recarregada de 3 em 3 segundos) -->
+  <script>
+    setTimeout(function () {
+      window.location.reload(1);
+    }, 3000);
+  </script>
+  <!-- End: helping debug (página é recarregada de 3 em 3 segundos) -->
