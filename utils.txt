@@ -48,6 +48,19 @@ display: flex;
         nowrap: Todos os itens são apertados em uma única linha.
         wrap: Itens se separam em linhas adicionais.
         wrap-reverse: Itens se separam em linhas adicionais em reverso.
+    +
+    align-content:  
+        align-content determina o espaçamento entre linhas, enquanto 
+        align-items determina como as linhas como um todo são alinhadas 
+        dentro do container. Quando há só uma linha, align-content 
+        não tem nenhum efeito.
+
+        flex-start: Linhas são agrupadas no topo do container.
+        flex-end: Linhas são agrupadas no fundo do container.
+        center:Linhas são agrupadas no centro vertical do container.
+        space-between: Linhas são posicionadas com espaço igual entre elas.
+        space-around: Linhas são posicionadas com espaço igual em torno delas.
+        stretch: Linhas se esticam para preencher o container.
 
 
 Obs.: As duas propriedades flex-direction e flex-wrap são usadas tão frequentemente juntas.
