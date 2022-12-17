@@ -1,0 +1,15 @@
+.img-corousel-um {
+    height: 500px;
+    object-fit: cover;
+    object-position: 0 70%;
+}
+
+.img-corousel-dois {
+    height: 500px;
+    object-fit: cover;
+    object-position: 0 60%;
+}
+
+.carousel-titulo {
+    font-family: 'Pacifico', cursive;
+}
