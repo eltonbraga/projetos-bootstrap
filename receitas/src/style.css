@@ -36,3 +36,15 @@
     height: 250px;
     object-fit: cover;
 }
+
+.modal-button {
+    background-color: darkred;
+    color: white;
+}
+
+.navbar-title {
+    font-family: 'Pacifico', cursive;
+    color: darkred;
+    font-size: 20px;
+
+}

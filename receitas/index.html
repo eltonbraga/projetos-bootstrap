@@ -20,7 +20,7 @@
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">fruta & fruto</a>
+      <a class="navbar-title" href="#">fruta & fruto</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
             <a class="nav-link" href="#">quem somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">contato</a>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-contato">contato</a>
           </li>
         </ul>
       </div>
@@ -145,29 +145,38 @@
     </section>
   </main>
 
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
-
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="entre-em-contato" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      <dialog class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em contato.</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
+        </header>
+        <main class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input  id="nome" class="form-control" type="text" placeholder="Digite seu nome.">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email"
+                placeholder="name@seudominio.com.br">
+            </div>
+            <div class="form-group">
+              <label for="mensagem-de-contato">Mensagem:</label>
+              <textarea class="form-control" id="contato" rows="3"></textarea>
+            </div>
+          </form>
+        </main>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn modal-button">Enviar solicitação</button>
+        </footer>
+      </dialog>
     </div>
   </div>
 
